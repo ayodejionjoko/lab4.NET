@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Song Form";
+}
+
+<form asp-action="Sing" method="post">
+    <label for="numberOfMonkeys">Enter the number of monkeys between 50 and 100:</label>
+    <input type="number" id="numberOfMonkeys" name="numberOfMonkeys" min="50" max="100" />
+    <button type="submit">Sing!</button>
+</form>

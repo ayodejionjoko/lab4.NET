@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Lab4</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</head>
+<body>
+    <header>
+        <h1>Hi </h1>
+        <p>My name is: Onjoko, Mustapha</p>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Show the song!", "SongForm", "Home")</li>
+                <li>@Html.ActionLink("Students", "CreateStudent", "Home")</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+        Footer!
+    </footer>
+</body>
+</html>
